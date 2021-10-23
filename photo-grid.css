@@ -7,12 +7,16 @@
     grid-auto-rows: 240px;
 }
 
-/* wrap these classes in media queries */
+/* wrap these classes in media queries
+- images will all be the same height and width set in grid-auto-rows 
+*/
+@media screen and (min-width: 600px){
 .card-long{
     grid-row: span 2;
 }
 
 .card-wide{
     grid-column: span 2 / auto;
+}
 }
 
