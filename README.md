@@ -25,7 +25,21 @@
 >grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));
 
 
-####  Photo gallery grids
+#### Responsive mosaic Photo gallery grids.
+- some photos are bigger, some taller, wider
+
+- images reposition themselves well as screen reduces
+
+> - NB: 
+> If you want images to be all responsive abd the same height, set `grid-auto-rows:"240px"`
+
+> - The css code
+> 
+> .grid-images{
+> display:grid;
+> grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));
+> grid-auto-row:240px;  // same height for all images
+> }
 
 ####   Animation website grid
 

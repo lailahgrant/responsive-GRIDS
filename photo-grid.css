@@ -8,5 +8,5 @@
 }
 
 .card-long{
-    
+    grid-row: span 2;
 }
