@@ -68,9 +68,16 @@
 > 
 > `}`
 >  
+> - To make images wider (big width)
+> Use `grid-column`
 >
-
-
+> -e.g.
+>  `.card-wide{`
+> 
+> `grid-column: span 2 / auto;`
+> 
+>`}`
+>
 
 ####   Animation website grid
 
