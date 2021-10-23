@@ -78,6 +78,30 @@
 > 
 >`}`
 >
+> - ` The problem with making images long and wide, such grids don't work on small phones`
+> 
+> ` The solution is to wrap the classes with long and wide in media queriea `
+>
+> #### Use Media queries
+> ` @media screen and (min-width: 600px) {`
+> 
+> `.card-tall:{grid-row: span 2 / auto}`
+>
+> `.card-wide:{grid-column: span 2 / auto}`
+> 
+> `}`
+>
+
+
+
+
+
+
+
+
+
+
+
 
 ####   Animation website grid
 
