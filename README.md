@@ -58,6 +58,17 @@
 > `}`
 
 
+> - Or can use:- `/`  to specify the end point.
+
+> e.g.  `grid-row: span start / end;`  or  `grid-row: start / end;`
+>
+> `.card-tall{`
+>
+> `grid-row: span 2 / auto;`
+> 
+> `}`
+>  
+>
 
 
 
