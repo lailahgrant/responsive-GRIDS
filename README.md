@@ -36,9 +36,13 @@
 > - The css code
 > 
 > .grid-images{
+> 
 > display:grid;
+> 
 > grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));
+> 
 > grid-auto-row:240px;  // same height for all images
+> 
 > }
 
 ####   Animation website grid
