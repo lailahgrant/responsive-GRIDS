@@ -33,17 +33,33 @@
 > - NB: 
 > If you want images to be all responsive abd the same height, set `grid-auto-rows:"240px"`
 
-> - The css code
+> - ` The css code`
 > 
-> .grid-images{
+> `.grid-images{`
 > 
-> display:grid;
+> `display:grid;`
 > 
-> grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));
+>` grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));`
 > 
-> grid-auto-row:240px;  // same height for all images
+> `grid-auto-row:240px;`  // same height for all images
 > 
-> }
+> `}`
+
+
+> To make longer images (longer height)
+> Use ` grid-row: span 2;`
+
+> e.g.
+>  
+> `.card-tall {`
+> 
+> `grid-row: span 2;`
+> 
+> `}`
+
+
+
+
 
 ####   Animation website grid
 
