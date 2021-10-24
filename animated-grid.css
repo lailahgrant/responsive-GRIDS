@@ -19,13 +19,45 @@
    /* width*/
    grid-template-columns: 240px auto auto 240px;
    
+   /*1. set up a variable for the staggering delay
+   - saves us from manually setting the delay for all the elements
+   */
+   --staggering-delay:100ms;
 }
 
-/* specifies grid-area for all the grid-template-areas above
-    - Use a for loop
+/* 2. Keyframes Animation
+- they allow us move from one set of properties to another.
+- from is the starting point then -to is the ending point.
 */
+    @keyframes cardEntrance{
+        from{ /*start of animation*/
+            opacity: 0; /*from Invisible*/
+            transform: scale(0.3);
+            filter: hue-rotate(180deg); /*forms a rainbow like color*/
+        }
+        to{ /*end of animation*/
+            opacity: 1;
+            transform:scale(1);
+            filter:hue-rotate(0deg);
+        }
+    }
+
+    .card{
+        background-color: rgb(36, 243, 147);
+        /*3. call the animation */
+        animation: cardEntrance 700ms ease-out;
+        /*4. very important */
+        animation-fill-mode: backwards; /*will set the elements to their 1st keyframe values - opacity 0*/
+    }
+
+
+    /*5.  set an animation stagger on each element -use animation-delay, use calc() to help us for basic calculations on numeric values
+     - Use a programmatic for loop like in sass*/
+
+/* specifies grid-area for all the grid-template-areas above*/
 .card:nth-child(1){
     grid-area: a; /*a takes up this grid-template-area above*/
+    animation-delay: calc(1 * var(--staggering-delay));
 }
 
 .card:nth-child(2){
