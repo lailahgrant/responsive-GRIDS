@@ -1,3 +1,39 @@
 .animated-grid{
-    
+   height:85vh;
+   margin-bottom: 5rem;
+   display:grid;
+   gap: 1rem;
+   
+   /* Explicit grid - you manually define the cols / rows using grid-template-areas property by giving names to the different areas in the grid
+   - can name them in the clock-wise direction */
+   grid-template-areas: 
+   'a  b  c  d '
+   'l  *  *  e'
+   'k  *  *  f'
+   'j  i  h  g'
+   ;
+
+   /* height */
+    /*fixed height of 25% for the 4 rows  */
+   grid-template-rows: repeat(4, 25%);
+   /* width*/
+   grid-template-columns: 240px auto auto 240px;
+   
 }
+
+/* specifies grid-area for all the grid-template-areas above
+    - Use a for loop
+*/
+.card:nth-child(1){
+    grid-area: a; /*a takes up this grid-template-area above*/
+}
+
+.card:nth-child(2){
+    grid-area: b;
+}
+
+.card:last-child{
+    grid-area: *;
+}
+
+

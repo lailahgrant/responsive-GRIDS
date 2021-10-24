@@ -45,10 +45,15 @@ a:hover{
     border-bottom: .3rem solid #fff;
 }
 
+a.back{
+    margin: 2rem;
+    text-transform: lowercase;
+}
+
 .develop{
     position: relative; 
     bottom:0;
     font-size: 1.5rem;
-    margin:18rem 0 0 0;
+    margin:3rem;
     text-align: center;
 }
