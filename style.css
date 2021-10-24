@@ -1,0 +1,42 @@
+body{
+    font-size:3rem;
+}
+
+a{
+    text-decoration:none;
+    color:#fff;
+    font-size: 2rem;
+    padding:2rem;
+}
+
+a:hover{
+    border-bottom: .3rem solid #fff;
+}
+
+.heading{
+    text-align: center;
+    margin: 2rem auto;
+}
+
+.card-box{
+    text-align: center;
+    margin: 0 auto;
+    width:100%;
+    border: 2px solid rgba(206, 201, 201, 0.1);
+    display: grid;
+    gap: 1rem;
+    padding:2rem;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+h1, h2, h3{
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
