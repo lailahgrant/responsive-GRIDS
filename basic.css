@@ -34,3 +34,21 @@ body{
     box-shadow: rgba(2,  8,  20,  0.1) 0px 0.35em 1.175em, rgba(2, 8, 20,  0.08) 0px 0.17em 0.5em;
     transform: translateY(-3px) scale(1.1);
 }
+a{
+    text-decoration:none;
+    color:#fff;
+    font-size: 2rem;
+    padding:2rem;
+}
+
+a:hover{
+    border-bottom: .3rem solid #fff;
+}
+
+.develop{
+    position: relative; 
+    bottom:0;
+    font-size: 1.5rem;
+    margin:18rem 0 0 0;
+    text-align: center;
+}
