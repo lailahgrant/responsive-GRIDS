@@ -7,10 +7,10 @@
    /* Explicit grid - you manually define the cols / rows using grid-template-areas property by giving names to the different areas in the grid
    - can name them in the clock-wise direction */
    grid-template-areas: 
-   'a  b  c  d '
-   'l  *  *  e'
-   'k  *  *  f'
-   'j  i  h  g'
+   'a  b   c    d '
+   'l  .   .    e'
+   'k  .   .    f'
+   'j  i   h    g'
    ;
 
    /* height */
@@ -62,10 +62,62 @@
 
 .card:nth-child(2){
     grid-area: b;
+    animation-delay: calc(2 * var(--staggering-delay));
+}
+
+.card:nth-child(3){
+    grid-area: c; /*a takes up this grid-template-area above*/
+    animation-delay: calc(3 * var(--staggering-delay));
+}
+
+.card:nth-child(4){
+    grid-area: d;
+    animation-delay: calc(4 * var(--staggering-delay));
+}
+
+.card:nth-child(5){
+    grid-area: e; /*a takes up this grid-template-area above*/
+    animation-delay: calc(5 * var(--staggering-delay));
+}
+
+.card:nth-child(6){
+    grid-area: f;
+    animation-delay: calc(6 * var(--staggering-delay));
+}
+
+.card:nth-child(7){
+    grid-area: g; /*a takes up this grid-template-area above*/
+    animation-delay: calc(7 * var(--staggering-delay));
+}
+
+.card:nth-child(8){
+    grid-area: h;
+    animation-delay: calc(8 * var(--staggering-delay));
+}
+
+.card:nth-child(9){
+    grid-area: i; /*a takes up this grid-template-area above*/
+    animation-delay: calc(9 * var(--staggering-delay));
+}
+
+.card:nth-child(10){
+    grid-area: j;
+    animation-delay: calc(10 * var(--staggering-delay));
+}
+
+.card:nth-child(11){
+    grid-area: k; /*a takes up this grid-template-area above*/
+    animation-delay: calc(11 * var(--staggering-delay));
+}
+
+.card:nth-child(12){
+    grid-area: l;
+    animation-delay: calc(12 * var(--staggering-delay));
 }
 
 .card:last-child{
-    grid-area: *;
+    grid-area: [];
+    animation-delay: calc(13 * var(--staggering-delay));
 }
 
 
